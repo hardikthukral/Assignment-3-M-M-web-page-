@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'myFirstFont';
+    src: url(Memphis\ River.otf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.top_bar{
+    background-image:linear-gradient(to right,purple,chocolate,yellow) ; 
+    width: 100%;
+    height:8vh;
+    text-align: center;
+    align-items: center;
+}
+
+.heading_top{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.nav nav{
+    background-color: aqua;
+    width: 100%;
+}
+
+.logo-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color:#22ffc0;
+    transition: .2s;
+}
+
+.logo-img:hover{
+    height: 80px;
+    width: 80px;
+}
+
+.header-nav ul li a{
+    color: purple;
+    font-weight:600;
+    font-size:30px;
+    font-family: 'Righteous', cursive;
+    transition: .2s ;
+    margin-left: 40px;
+}
+
+.header-nav ul li a:hover{
+    font-size: 32px;
+    color:yellow;
+}
+
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60px;
+    background: black;
+    line-height: 40px;
+    padding: 10px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.search-input{
+    background: #353535;
+    color: #fff;
+    outline: none;
+    border: none;
+    line-height: 40px;
+    width: 0px;
+    float: left;
+    font-size: 1em;
+    transition: 0.7s ease;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #353535;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+    color: #22ffc0;
+    transition: 0.4s ease;
+}
+
+.search-box:hover > .search-input,.search-input:focus{
+    width: 75%;
+    margin:0px 8px;
+}
+
+.search-box:hover>.search-btn,.search-input:focus + .search-btn{
+    background: #22ffc0;
+    color: #101010;
+}
+
+main .multiple_background{
+    background-image: url("C:/css/Assignment 3/multiple-background1.jpg"),url("C:/css/Assignment 3/multiple-background2.jpg"),url("C:/css/Assignment 3/multiple-background3.webp"),url("C:/css/Assignment 3/multiple-background4.jpg"),url("C:/css/Assignment 3/multiple-background5.jpeg");
+    background-position: center,right top,right bottom,left top, left bottom;
+    background-repeat: no-repeat;
+    background-size: 40%,30%,30%,30%,30%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 85vh;
+}
+
+.multiple_background_div{
+    background-color: rgba(0,255,255,0.4);
+}
+
+.multiple_background_heading{
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 95px;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+.mid_page_img{
+    width: 80%;
+    height: 100%;
+    padding: 20px 20px 20px 60px;
+}
+
+.mid_page_heading{
+    text-align: center;
+    font-size: 80px;
+    color: yellow;
+    padding-top: 30px;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.mid_page_heading1{
+    color: black;
+    font-family: 'myFirstFont',sans-serif;
+    font-size: 80px;
+}
+
+.mid_page_heading2{
+    color: chocolate;
+    font-family: 'myFirstFont',sans-serif;
+    font-size: 80px;
+}
+
+.mid_page_content{
+    font-size: 25px;
+    color: black;
+    line-height: 2;
+    padding-right: 15px;
+    padding-bottom: 12px;
+}
+
+.multiple_background_heading_calories{
+    color: brown;
+    font-size: 35px;
+    padding: 10px 15px 10px 26px;
+    font-weight: bold;
+}
+
+.multiple_background_heading_fat{
+    color: yellow;
+    font-size: 35px;
+    padding: 10px 15px 10px 26px;
+    font-weight: bold;
+}
+
+.multiple_background_heading_sodium{
+    color: brown;
+    font-size: 35px;
+    padding: 10px 15px 10px 26px;
+    font-weight: bold;
+}
+
+.multiple_background_heading_ingredients{
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 15px 95px;
+    color: yellow;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.multiple_background_heading_ingredients_list{
+    color: brown;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 10px 10px 25px;
+    font-family: 'Anton', sans-serif;
+}
+
+.footer{
+    background-color: yellow;
+    width: 100%;
+    height: 40%;
+    margin-top: 10px;
+}
+
+.feedback_heading{
+    padding-top: 15px;
+    color: chocolate;
+    font-weight: bold;
+    font-family: 'Rubik Iso', cursive;
+}
+
+.contact_heading{
+    padding-top: 15px;
+    color: chocolate;
+    font-weight: bold;
+    font-family: 'Rubik Iso', cursive;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.fa-square-instagram{
+    padding-top: 20px;
+    color: black;
+    font-size: 40px;
+}
+
+.fa-square-instagram:hover{
+    color: purple;
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+ul li span{
+    color: brown;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.fa-square-facebook{
+    padding-top: 20px;
+    color: black;
+    font-size: 40px;
+}
+
+.fa-square-facebook:hover{
+    color: blue;
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+.fa-envelope{
+    padding-top: 20px;
+    color: black;
+    font-size: 40px;
+}
+
+.fa-envelope:hover{
+    color: rgb(98, 36, 36);
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+.footer_heading1{
+    padding-top: 20px;
+    padding-left: 20px;
+    color:chocolate;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Rubik Iso', cursive;
+}
+
+svg{
+    padding-left: 90px;
+}
+
+.support_heading{
+    color: chocolate;
+    font-size: 35px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.fa-phone{
+    color: black;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.fa-phone:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    color: green;
+}
